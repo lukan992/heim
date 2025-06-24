@@ -1,0 +1,47 @@
+/* style.css (Объединенный из style.css, services.css, reviews.css И СТИЛЕЙ ДИАГРАММЫ) */
+/* ======================================== */
+/*            CSS ПЕРЕМЕННЫЕ                */
+/* ======================================== */
+:root {
+    --font-family: 'Onest', -apple-system, Roboto, Helvetica, sans-serif;
+    --color-text-primary: #222222;
+    --color-text-secondary: #8a8a8a;
+    --color-text-muted: rgba(243, 243, 243, 0.7);
+    --color-text-reviews-card-project: rgba(34, 34, 34, 0.7); 
+
+    --color-bg-page: #F3F3F7; /* Общий фон страницы */
+    --color-bg-services-section: var(--color-bg-page); 
+    --color-bg-reviews-section: #fff; 
+    --color-bg-dark-section: #222222;
+    --color-bg-card-light: #F3F3F3; 
+    --color-bg-card-transparent: rgba(255, 255, 255, 0.13); 
+    --color-bg-service-card: rgba(255, 255, 255, 1);
+    --color-bg-review-card: #f9f9f9; 
+    --color-bg-tech-item-filled: #601e90; 
+
+
+    --color-primary: #601E90;
+    --color-primary-dark: #4B0082; 
+
+    --color-border-dark: #222222;
+    --color-border-light: #F3F3F3;
+    --color-border-medium: #444444;
+    --color-border-input: rgba(243, 243, 243, 0.7);
+    --color-border-tag: var(--color-text-primary);
+    --color-border-tag-active: var(--color-primary-dark);
+    --color-border-node: #ccc; /* Для узлов диаграммы */
+
+
+    --line-height-base: 1.5;
+    --line-height-tight: 1.2;
+    --line-height-tighter: 1.0;
+    --line-height-short: 98%; 
+    --line-height-service-card-description: 115%;
+    --line-height-review-card-name: 98%;
+    --line-height-review-card-project: 100%;
+    --line-height-review-card-text: 115%;
+    --line-height-tech-stack-title: 98%;
+    --line-height-tech-stack-description: 98%; /* Или var(--line-height-base) */
+    --line-height-tag: 98%;
+    --line-height-tech-item: 98%;
+}

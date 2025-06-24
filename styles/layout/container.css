@@ -1,0 +1,29 @@
+.container {
+    width: 100%;
+    max-width: 1232px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+.content { 
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  padding: 40px 0;
+}
+
+
+.content__sections {
+  display: flex;
+  flex-direction: column;
+  gap: 160px; 
+}
+
+
+.content__sections { gap: 80px; }
+
+
+.content__sections { gap: 60px; }

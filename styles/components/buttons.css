@@ -1,0 +1,36 @@
+.btn-outline {
+    border-color: var(--color-border-dark);
+    color: var(--color-text-primary);
+    background-color: transparent;
+}
+
+
+.btn-outline:hover {
+    background-color: var(--color-text-primary);
+    color: var(--color-text-secondary);
+}
+
+
+.consultation-btn:hover {
+    background-color: var(--color-primary); 
+}
+
+
+.tech-cta-button { 
+    background-color: var(--color-primary); 
+    color: var(--color-text-secondary); 
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.2s ease-in-out;
+}
+
+
+.tech-cta-button:hover {
+    background-color: var(--color-primary-dark); 
+}

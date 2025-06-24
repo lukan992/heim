@@ -1,0 +1,70 @@
+.reviews { }
+.reviews__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 66px;
+}
+.reviews__title { 
+  font-size: 48px;
+  font-weight: 700;
+  line-height: var(--line-height-short); 
+  color: var(--color-text-primary);
+}
+.reviews__list {
+  display: flex;
+  gap: 30px;
+  overflow-x: auto;
+  padding-bottom: 20px;
+
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
+}
+.reviews__list::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
+}
+.review-card {
+  flex-shrink: 0; 
+  width: 488px;
+  padding: 20px;
+  background-color: var(--color-bg-review-card); 
+  border-radius: 10px;
+}
+.review-card__header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+.review-card__avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  object-fit: cover; 
+}
+.review-card__info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.review-card__name {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: var(--line-height-review-card-name);
+  color: var(--color-text-primary);
+}
+.review-card__project {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: var(--line-height-review-card-project);
+  color: var(--color-text-reviews-card-project); 
+}
+.review-card__text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: var(--line-height-review-card-text);
+  color: var(--color-text-primary);
+}
+.reviews__nav-arrows g { /* Или более конкретно: #reviews-nav-left-group, #reviews-nav-right-group */
+    cursor: pointer;
+}
