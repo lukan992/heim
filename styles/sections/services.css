@@ -13,6 +13,15 @@ body {
     color: var(--main, #222);
 }
 
+.main-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f8f800;
+}
+
+
 .services-container {
     border-radius: 0;
     padding: 30px;
