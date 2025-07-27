@@ -1,80 +1,277 @@
-.services {
-  position: relative;
-  background-color: var(--color-bg-services-section);
-  padding: 100px 0;
-  overflow: hidden;
+:root {
+    --main: #222;
 }
 
-.services__container {
-  max-width: 1232px;
-  margin: 0 auto;
-  padding: 0 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 60px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.services__title {
-  font-size: 32px;
-  font-weight: 700;
-  color: var(--color-text-primary);
+body {
+    font-family: 'Onest', -apple-system, Roboto, Helvetica, sans-serif;
+    color: var(--main, #222);
 }
 
-.services__cards {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
+.services-container {
+    border-radius: 0;
+    padding: 30px;
+}
+
+.services-layout {
+    display: flex;
+    gap: 20px;
+}
+
+.left-column {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    line-height: normal;
+    width: 28%;
+    margin-left: 0;
+}
+
+.left-column-content {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    align-items: stretch;
+    font-family: 'Onest', -apple-system, Roboto, Helvetica, sans-serif;
+    color: var(--main, #222);
+}
+
+.main-title {
+    color: var(--main, #222);
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1;
+    align-self: flex-start;
+}
+
+.turnkey-service {
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.4);
+    display: flex;
+    margin-top: 48px;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: flex-start;
+    font-weight: 500;
+    padding: 27px 20px;
+}
+
+.turnkey-service .service-title {
+    color: var(--main, #222);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.turnkey-service .service-description {
+    color: var(--main, #222);
+    font-size: 18px;
+    line-height: 21px;
+    margin-top: 30px;
+}
+
+.service-button {
+    align-items: flex-start;
+    border-bottom: 1px solid var(--main, #222);
+    align-self: stretch;
+    display: flex;
+    margin-top: 417px;
+    flex-direction: column;
+    font-size: 16px;
+    white-space: nowrap;
+    justify-content: center;
+    padding: 4px 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.service-button:hover {
+    background-color: rgba(34, 34, 34, 0.1);
+}
+
+.button-text {
+    color: var(--main, #222);
+}
+
+.right-column {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    line-height: normal;
+    width: 72%;
+    margin-left: 20px;
+}
+
+.services-grid {
+    display: flex;
+    margin-top: 95px;
+    flex-grow: 1;
+    align-items: stretch;
+    gap: 9px;
+    flex-wrap: wrap;
+}
+
+.side-images {
+    margin: auto 0;
+}
+
+.side-image {
+    aspect-ratio: 0.27;
+    object-fit: contain;
+    object-position: center;
+    width: 86px;
+    display: block;
+    margin-top: -3px;
+}
+
+.services-cards {
+    font-family: 'Onest', -apple-system, Roboto, Helvetica, sans-serif;
+    color: var(--main, #222);
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 0;
+    width: fit-content;
 }
 
 .service-card {
-  background-color: #fff;
-  border-radius: 10px;
-  padding: 32px;
-  border: 1px solid #ccc;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.4);
+    width: 100%;
+    overflow: hidden;
+    padding: 20px;
+    margin-bottom: 40px;
 }
 
-.service-card__header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.service-card:last-child {
+    margin-bottom: 0;
 }
 
-.service-card__title {
-  font-size: 24px;
-  font-weight: 700;
-  color: var(--color-text-primary);
+.service-card-content {
+    width: 100%;
 }
 
-.service-card__icon {
-  width: 24px;
-  height: 24px;
-  object-fit: contain;
+.service-header {
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    gap: 40px;
+    font-size: 32px;
+    font-weight: 700;
+    white-space: nowrap;
+    line-height: 1;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-.service-card__description {
-  font-size: 16px;
-  font-weight: 400;
-  color: var(--color-text-primary);
-  line-height: 150%;
+.service-card .service-title {
+    color: var(--main, #222);
 }
 
-.service-card__button {
-  align-self: flex-start;
-  font-size: 14px;
-  font-weight: 500;
-  padding: 8px 20px;
-  border: none;
-  border-bottom: 1px solid var(--color-text-primary);
-  background: transparent;
-  cursor: pointer;
-  color: var(--color-text-primary);
-  transition: transform 0.3s ease;
+.service-icon {
+    aspect-ratio: 1.05;
+    object-fit: contain;
+    object-position: center;
+    width: 42px;
+    flex-shrink: 0;
 }
 
-.service-card__button:hover {
-  transform: scale(1.05);
+.service-card .service-description {
+    color: var(--main, #222);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21px;
+    margin-top: 40px;
+}
+
+.service-button-full {
+    min-width: 320px;
+    align-items: center;
+    border-bottom: 1px solid var(--main, #222);
+    display: flex;
+    margin-top: 40px;
+    width: 320px;
+    max-width: 100%;
+    gap: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    white-space: nowrap;
+    justify-content: flex-start;
+    padding: 4px 72px 4px 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.service-button-full:hover {
+    background-color: rgba(34, 34, 34, 0.1);
+}
+
+.service-button-full .button-text {
+    color: var(--main, #222);
+    align-self: stretch;
+    margin: auto 0;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 991px) {
+    .services-layout {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+    }
+    
+    .left-column {
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    .left-column-content {
+        margin-top: 30px;
+    }
+    
+    .main-title {
+        font-size: 40px;
+    }
+    
+    .turnkey-service {
+        margin-top: 40px;
+    }
+    
+    .service-button {
+        margin-top: 40px;
+        padding-right: 20px;
+        white-space: initial;
+    }
+    
+    .right-column {
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    .services-grid {
+        margin-top: 40px;
+    }
+    
+    .services-cards {
+        max-width: 100%;
+    }
+    
+    .service-header {
+        max-width: 100%;
+        white-space: initial;
+    }
+    
+    .service-card .service-description {
+        max-width: 100%;
+    }
+    
+    .service-button-full {
+        padding-right: 20px;
+        white-space: initial;
+    }
 }
